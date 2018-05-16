@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/*==========================*/
+
+/*LES INDISPENSABLLLLLLLES*/
+
+/*boites*/
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+/*clearfix*/
+
+/*
+.clearfix::after
+{
+	content:"";
+display: table;
+clear: both;
+}
+*/
+
+/*NAVIGATION*/
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*TEXTE INVISIBLE*/
+
+/*=====================================*/
+
+/*===Grille===*/
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+/* === TITRE & TEXTE==*/
+header{
+    font-family:'Amatic SC', cursive;
+    background-color:rgba(164,187,219, 0.25);
+}
+
+a{
+    font-family:'Amatic SC', cursive;
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: #454141;
+}
+figcaption{
+    font-family: 'Amatic SC',cursive;
+}
+.title{
+    align-content: center;
+    text-align: center;
+      font-family:'Amatic SC', cursive;
+    font-size: 3em;
+}
+h2{
+    align-content: center;
+    text-align: center;
+    font-family:'Amatic SC', cursive;
+    font-size: 2em;
+}
+#project{
+    margin-top: 0;
+}
+/* === Boutons et CtAs ===*/
+.btn{
+    background-color: #a4bbdb;
+    color: white;
+    padding: 5px 10px 10px 10px;
+    font-size: 1.5em;
+    width: 180px;}
+
+.btn:hover{
+        background-color: #e5a5b7;
+}
+/*===================*=================*/
+
+/*navbar*/
+nav{
+    height: 140px;
+}
+#main_nav ul
+{
+	display: flex;
+	justify-content: space-between;
+}
+#main_nav ul li a,
+#main_nav ul li a :visited
+{
+	color: white;
+	text-decoration: none;
+    margin: 0px 25px 25px 0px;
+}
+#Logo{
+    height: 123px;
+    width: 140px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+nav li:hover,
+nav li:active,
+nav li:focus{
+    background-color: #e5a5b7;
+}
+nav li{
+    background-color: #a4bbdb;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+/*Anim javascript---------------------------------*/
+nav.nav-shrink #Logo {
+height:0px;
+width: 0px;}
+nav.nav-shrink {
+    background-color: #a4bbdb;
+    position: fixed;
+    top:0;
+    right: 240px;
+    height: 43px;
+    border: solid 1px white;
+    z-index: 1;
+    
+}
+
+nav.nav-shrink ul li {
+  padding: 40px 30px;
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+   
+}
+
+
+nav ul li {
+  line-height: 1;
+  -webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+/*Slider------------------------------------*/
+#slider{
+    background-color: rgba(164,187,219, 0.25);
+    text-align: center;
+}
+/*Notre projet------------------------------------*/
+
+#notre_projet .content{
+    margin-left: 80px;
+}
+#notre_projet p{
+    margin-left: 80px;
+}
+#notre_projet a{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 625px;
+    top:-80px;
+}
+/*Notre équipe------------------------------------*/
+#notre_equipe a{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 700px;
+    top:-50px;
+}
+
+/*Section la vie au centre-----------------------------*/
+#la_vie{
+    text-align: center;
+}
+#la_vie h1{
+    align-content: center;
+    text-align: center;
+}
+figcaption{
+    text-align: center;
+    font-size: 1.8em;
+    background-color: #a4bbdb;
+    color: white;
+}
+
+#la_vie .btn{
+    text-align: center;  
+}
+.legende{
+    height: 80px;
+    font-size: 1.3em;
+}
+
+/*Renseignement et tarifs----------------------------------*/
+
+#renseignement_tarif article{
+    text-align: center;
+    align-content: center;
+}
+#renseignement_tarif #renseignement{
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+}
+table{
+    margin: 25px 0px;
+    color: white;
+}
+th{
+    border: solid 1px;
+        border-radius: 5px;
+        background-color: #a4bbdb;
+}
+table td{
+    border: solid 1px ;
+    border-radius: 5px;
+        background-color: #a4bbdb;
+}
+#renseignement_tarif a{
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+    
+}
+/*Inscription----------------------*/
+#inscription{
+    margin-top: 45px;
+    height: 160px;
+    background-color: #e5a5b7;
+    text-align: center;
+}
+
+#inscription a{
+    color: #000000;
+    font-size: 2.5em;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 70px 15px 70px;
+    position: relative;
+    top: 50px;
+}
+
+#inscription a:hover{
+    background-color: #a4bbdb;
+    color: white;
+    transition-duration: .3s;
+}
+
+/*GALERIE--------------------------------------------*/
+#galerie{
+    text-align: center;
+}
+#galerie img{
+    height: 220px;
+    width: 220px;
+    padding: 0px 10px 0 10px;
+}
+
+#galerie a{
+    display: inline-block ;
+    position: relative;
+    top: 40px;
+    margin-bottom: 50px;
+}
+#galerie img:hover {
+width:300px;
+height:300px;
+}
+
+/*FOOTER---------------------------------------------*/
+footer{
+    margin-top: 50px;
+    height: 200px;
+    background-color: #a4bbdb;
+    align-items: center;
+    text-align: center;
+}
+#footer h1{
+    color: white;
+    margin: 0px;
+    text-decoration: none;
+}
+
+#footer article{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.sponsor{
+    margin-left: 160px;
+}
+#footer p{
+    color: white;
+    margin:0px 0px 0px 210px;
+}
